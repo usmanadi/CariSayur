@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cv_rekomendasi"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:outlineProvider="none"
+    android:layout_marginBottom="1dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/gbr"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="90dp"-->
+            <!--android:background="@mipmap/ic_sawi"/>-->
+        <TextView
+            android:id="@+id/angka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="50dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#5EA3E8"
+            android:visibility="visible"/>
+        <TextView
+            android:id="@+id/nama_toko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nama toko"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/angka"
+            android:textColor="@color/text"/>
+        <TextView
+            android:id="@+id/ratingV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="4.5"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/text"
+            android:layout_toRightOf="@+id/angka"
+            android:layout_below="@+id/nama_toko"/>
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_marginLeft="2dp"
+            android:rating="4.3"
+            android:theme="@style/RatingBar"
+            style="?attr/ratingBarStyleSmall"
+            android:layout_toRightOf="@+id/ratingV"
+            android:layout_below="@+id/nama_toko"/>
+        <TextView
+            android:id="@+id/alamat_toko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="alamat toko"
+            android:singleLine="true"
+            android:textSize="12dp"
+            android:ellipsize="marquee"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/rating"
+            android:textColor="@color/textHeader"
+            android:layout_toRightOf="@+id/angka"
+            android:layout_marginBottom="8dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
